@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ABHMUN</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="mun.png">
+  <script src="script.js"></script>
+  <style>
+    
+
+   
+    .btn-outline-info{
+      height: 61px;
+    }
+
+    .btn-outline-warning{
+      height: 61px;
+    }
+
+    .btn-outline-success{
+    height: 61px;
+  }
+    .trapezium {
+      overflow: hidden;
+      position: relative;
+      height: 200px; /* Adjust the height according to your requirement */
+      width: 200px; /* Adjust the width according to your requirement */
+    }
+    
+    .trapezium .carousel-inner {
+      height: 100%;
+      
+    }
+    
+    .trapezium .carousel-item {
+      height: 150%; /* Height more than 100% to make it trapezium-shaped */
+      transition: transform 0.6s ease;
+      transform-origin: 0 50%;
+      position: absolute;
+      background-color: #01648b; /* Light gray background */
+
+      /* background-color: white; Light gray background */
+    }
+    
+    .trapezium .carousel-item.active {
+      transform: skewX(60deg) translateX(200%); /* Skewing and translating to create trapezium effect */
+      z-index: 1;
+      transition-delay: 2s;
+      background-color: transparent; /* Light gray background */
+
+      /* opacity: 0; */
+    }
+    
+    .trapezium .carousel-item.next {
+      transform: skewX(45deg) translateX(200%); /* Move next slide off to the right */
+      z-index: 0;
+    }
+    
+    .trapezium .carousel-item.prev {
+      transform: skewX(45deg) translateX(-200%); /* Skew and translate to make the previous slide disappear */
+      opacity: 0; /* Hide the previous slide when fully skewed */
+      z-index: 0;
+    }
+
+    .jumbotron {
+      background-color: transparent;
+      color: white;
+      border: none;
+      min-height: 17vh;
+      /* min-width: 10vh; */
+    overflow: hidden;
+      
+      /* me */
+      
+    }
+
+    .container{
+      width:110%;
+      height:110%;
+    }
+
+    .col-20 {
+      min-height: 35vh;
+      min-width: 55vh;
+      width:110%;
+      height:110%
+
+    }
+    
+    
+    .custom-container {
+    height: 300px; /* Set the desired height */
+    display: flex;
+    align-items: center; 
+    overflow: hidden;
+    margin: 0 auto; 
+
+  }
+    .rowcustom{
+      min-height: 30vh;
+      min-width: 90vh;
+    }
+
+    .col{
+    overflow: hidden;
+
+    }
+
+
+    .container2{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}
+
+    .container2{
+    overflow: hidden;
+
+    }
+
+    .custom-container-2{
+      color: transparent;
+      position: relative;
+    }
+
+    .custom-btn {
+      /* font-size: 25px; */
+      font-weight: 520;
+      will-change: transform;
+      transform: translateZ(0);
+      /* transform-origin: center center; */
+      transition: transform 0.3s ease-in-out;
+      width:100%;
+      /* justify-content: center; */
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+
+      
+    }
+
+    .custom-btn:hover {
+      transform: scale(1.05);
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+      /* background-color: transparent; */
+
+
+    }
+
+    .video-wrapper {
+      top: 10px;
+      overflow: hidden;
+      margin-right: 8.1%;
+      height: auto; /* Auto-adjusting height */
+      width: 54%; /* Set the width of the container */
+      position: relative;
+    }
+    .video-wrapper video {
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    /* Triangle */
+    .triangle {
+      top: 10px;
+     
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 100px auto 0; /* Initial triangle size */
+      border-color: transparent #222222 transparent transparent; /* Adjust color as needed */
+      position: sticky;
+      left: 0; /* Adjust the position of the triangle */
+      
+      /* transform: translateX(-20px); */
+      transform:  scaleY(-1); /* Flip along the x-axis */
+      /* margin-right: 8.1%; */
+    
+    }
+
+</style>
+  
+
+
+
+
+
+</head>
+<body>
+  
+  <img src="meme_back.png" class="bg-image" alt="Background Image">
+  <div class='jumbotron text-left text-xl'>
+    <h1 class="BHMUN">Army Burn Hall Model United Nations</h1>
+  </div>
+  <img src="mun.png" class="bg-image-wrapper">
+  <div class="container2">
+    
+    <div class="wrapper animated-from-bottom">
+      <div class="container-fluid">
+        <div class="row rowcustom">
+          <div class="col-20 position-relative">
+            <h2 class="static-txt">Join the <span class="auto-type"></span></h2>        
+          </div>
+          
+        </div>
+      </div>
+      <div class="triangle"></div>
+  <div class="video-wrapper" id="me">
+    <video id="myVideo" autoplay muted loop>
+      <source src="test.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+      
+    </div>
+  </div>
+  
+
+  <div class="col d-flex">
+    <div class="container6">
+    <div class="container-segment">
+      <div class="segment-title">Days</div>
+      <div class="segment">
+        <div class="flip-card" data-days-tens>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+        <div class="flip-card" data-days-ones>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container-segment">
+      <div class="segment-title">Hours</div>
+      <div class="segment">
+        <div class="flip-card" data-hours-tens>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+        <div class="flip-card" data-hours-ones>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="container-segment">
+      <div class="segment-title">Minutes</div>
+      <div class="segment">
+        <div class="flip-card" data-minutes-tens>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+        <div class="flip-card" data-minutes-ones>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="container-segment">
+      <div class="segment-title">Seconds</div>
+      <div class="segment">
+        <div class="flip-card" data-seconds-tens>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+        <div class="flip-card" data-seconds-ones>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+<div class="container-fluid custom-container d-flex">
+  <button id='mein kon' class="register-btn btn btn-lg btn-primary px-4  animated-from-bottom" data-toggle="modal" data-target="#exampleModal">Register Now</button>
+  
+</div>
+    
+
+<div class="container-fluid d-flex">
+  
+
+  <h5 class="me2 mb-0">© 2024 ABHC. Developed by <a href="https://instagram.com/_zohairahmed/" target="_blank" class="m"><u>Zohair Ahmed</u></a></h5>
+
+</div>
+
+<div class="container-fluid d-flex fixed-bottom">
+  
+  <h5 class="me mb-0">© 2024 ABHC. Developed by <a href="https://instagram.com/_zohairahmed/" target="_blank" class="m"><u>Zohair Ahmed</u></a></h5>
+  
+</div>
+
+  
+  
+
+    <!-- <h6 class="statement">- The best Model United Nations experiences require preparation, followed by dedication.</h6> </div> -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>  
+      var typed = new Typed('.auto-type', {
+        strings: ['UNSC.','UNHRC.','WHO.','UNEP.','PNA.','OIC.'],
+        typeSpeed: 120,
+        backSpeed: 120,
+        backDelay:1500,
+        smartBackspace: false,
+        loop: true,
+      });
+
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+  if (location.pathname === '/index.html') {
+      location.replace('/');
+  }
+  </script>
+
+<script>
+
+const redirectButton = document.getElementById('mein kon');
+
+// Add a click event listener to the button
+redirectButton.addEventListener('click', function() {
+  // Redirect the user to delegation.html when the button is clicked
+  window.location.href = 'https://form.jotform.com/233641410623042';
+
+
+});
+
+
+
+
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+  // JavaScript to dynamically adjust the triangle's height based on the video's height
+  $(document).ready(function() {
+
+    if (window.matchMedia('(min-width: 992px)').matches) {
+      
+      const video = document.querySelector('.video-wrapper');
+      const wr=document.querySelector('.wrapper')
+      const triangle = document.querySelector('.triangle');
+      
+      console.log(wr.clientHeight)
+      
+        const videoHeight = video.clientHeight;
+        const videoW = video.clientWidth;
+        console.log(videoHeight);
+        triangle.style.borderWidth = `0 ${videoW/6}px ${videoHeight  +10}px 0`;
+        wr.style.height=(videoHeight+10)+'px';
+    } 
+    });
+    
+    // Update triangle height on window resize
+    window.addEventListener('resize', function() {
+
+      if (window.matchMedia('(min-width: 992px)').matches) {
+        const video = document.querySelector('.video-wrapper');
+        const triangle = document.querySelector('.triangle');
+        const videoHeight = video.clientHeight;
+        const videoW = video.clientWidth;
+        const wr=document.querySelector('.wrapper')
+        console.log(wr.clientHeight)
+        
+        
+        triangle.style.borderWidth = `0 ${videoW/6}px ${videoHeight - 1}px 0`;
+        wr.style.height=(videoHeight+10)+'px';
+ 
+} 
+
+
+
+    });
+  
+</script>   
+</body>
+</html>
