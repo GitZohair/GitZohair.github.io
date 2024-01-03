@@ -7,7 +7,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  
+
 
   <link rel="stylesheet" href="style.css">
 
@@ -16,9 +16,9 @@
   <link rel="shortcut icon" href="mun.png">
   <script src="script.js"></script>
   <style>
-    
 
-   
+
+
     .btn-outline-info{
       height: 61px;
     }
@@ -36,12 +36,12 @@
       height: 200px; /* Adjust the height according to your requirement */
       width: 200px; /* Adjust the width according to your requirement */
     }
-    
+
     .trapezium .carousel-inner {
       height: 100%;
-      
+
     }
-    
+
     .trapezium .carousel-item {
       height: 150%; /* Height more than 100% to make it trapezium-shaped */
       transition: transform 0.6s ease;
@@ -51,7 +51,7 @@
 
       /* background-color: white; Light gray background */
     }
-    
+
     .trapezium .carousel-item.active {
       transform: skewX(60deg) translateX(200%); /* Skewing and translating to create trapezium effect */
       z-index: 1;
@@ -60,12 +60,12 @@
 
       /* opacity: 0; */
     }
-    
+
     .trapezium .carousel-item.next {
       transform: skewX(45deg) translateX(200%); /* Move next slide off to the right */
       z-index: 0;
     }
-    
+
     .trapezium .carousel-item.prev {
       transform: skewX(45deg) translateX(-200%); /* Skew and translate to make the previous slide disappear */
       opacity: 0; /* Hide the previous slide when fully skewed */
@@ -79,9 +79,9 @@
       min-height: 17vh;
       /* min-width: 10vh; */
     overflow: hidden;
-      
+
       /* me */
-      
+
     }
 
     .container{
@@ -96,8 +96,8 @@
       height:110%
 
     }
-    
-    
+
+
     .custom-container {
     height: 300px; /* Set the desired height */
     display: flex;
@@ -141,7 +141,7 @@
       text-align: center;
       -webkit-font-smoothing: antialiased;
 
-      
+
     }
 
     .custom-btn:hover {
@@ -169,7 +169,7 @@
     /* Triangle */
     .triangle {
       top: 10px;
-     
+
       width: 0;
       height: 0;
       border-style: solid;
@@ -177,15 +177,15 @@
       border-color: transparent #222222 transparent transparent; /* Adjust color as needed */
       position: sticky;
       left: 0; /* Adjust the position of the triangle */
-      
+
       /* transform: translateX(-20px); */
       transform:  scaleY(-1); /* Flip along the x-axis */
       /* margin-right: 8.1%; */
-    
+
     }
 
 </style>
-  
+
 
 
 
@@ -193,21 +193,21 @@
 
 </head>
 <body>
-  
+
   <img src="meme_back.png" class="bg-image" alt="Background Image">
   <div class='jumbotron text-left text-xl'>
     <h1 class="BHMUN">Army Burn Hall Model United Nations</h1>
   </div>
   <img src="mun.png" class="bg-image-wrapper">
   <div class="container2">
-    
+
     <div class="wrapper animated-from-bottom">
       <div class="container-fluid">
         <div class="row rowcustom">
           <div class="col-20 position-relative">
             <h2 class="static-txt">Join the <span class="auto-type"></span></h2>        
           </div>
-          
+
         </div>
       </div>
       <div class="triangle"></div>
@@ -217,10 +217,10 @@
       Your browser does not support the video tag.
     </video>
   </div>
-      
+
     </div>
   </div>
-  
+
 
   <div class="col d-flex">
     <div class="container6">
@@ -237,7 +237,7 @@
         </div>
       </div>
     </div>
-  
+
     <div class="container-segment">
       <div class="segment-title">Hours</div>
       <div class="segment">
@@ -284,25 +284,25 @@
 
 <div class="container-fluid custom-container d-flex">
   <button id='mein kon' class="register-btn btn btn-lg btn-primary px-4  animated-from-bottom" data-toggle="modal" data-target="#exampleModal">Register Now</button>
-  
+
 </div>
-    
+
 
 <div class="container-fluid d-flex">
-  
+
 
   <h5 class="me2 mb-0">© 2024 ABHC. Developed by <a href="https://instagram.com/_zohairahmed/" target="_blank" class="m"><u>Zohair Ahmed</u></a></h5>
 
 </div>
 
 <div class="container-fluid d-flex fixed-bottom">
-  
+
   <h5 class="me mb-0">© 2024 ABHC. Developed by <a href="https://instagram.com/_zohairahmed/" target="_blank" class="m"><u>Zohair Ahmed</u></a></h5>
-  
+
 </div>
 
-  
-  
+
+
 
     <!-- <h6 class="statement">- The best Model United Nations experiences require preparation, followed by dedication.</h6> </div> -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -336,8 +336,7 @@ const redirectButton = document.getElementById('mein kon');
 // Add a click event listener to the button
 redirectButton.addEventListener('click', function() {
   // Redirect the user to delegation.html when the button is clicked
-  //window.location.href = 'https://form.jotform.com/233641410623042';
-  window.location.href = '/register.php';
+  window.location.href = 'https://form.jotform.com/233641410623042';
 
 
 });
@@ -357,13 +356,13 @@ redirectButton.addEventListener('click', function() {
   $(document).ready(function() {
 
     if (window.matchMedia('(min-width: 992px)').matches) {
-      
+
       const video = document.querySelector('.video-wrapper');
       const wr=document.querySelector('.wrapper')
       const triangle = document.querySelector('.triangle');
-      
+
       console.log(wr.clientHeight)
-      
+
         const videoHeight = video.clientHeight;
         const videoW = video.clientWidth;
         console.log(videoHeight);
@@ -371,7 +370,7 @@ redirectButton.addEventListener('click', function() {
         wr.style.height=(videoHeight+10)+'px';
     } 
     });
-    
+
     // Update triangle height on window resize
     window.addEventListener('resize', function() {
 
@@ -382,17 +381,17 @@ redirectButton.addEventListener('click', function() {
         const videoW = video.clientWidth;
         const wr=document.querySelector('.wrapper')
         console.log(wr.clientHeight)
-        
-        
+
+
         triangle.style.borderWidth = `0 ${videoW/6}px ${videoHeight - 1}px 0`;
         wr.style.height=(videoHeight+10)+'px';
- 
+
 } 
 
 
 
     });
-  
+
 </script>   
 </body>
 </html>
