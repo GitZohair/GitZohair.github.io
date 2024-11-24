@@ -1,0 +1,112 @@
+.main-content-ann{
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+.card-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+
+}
+
+.main-content-ann .card{
+    height: 100%;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-direction: row;
+
+}
+.main-content-ann .card .event-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-shrink: 0;
+    flex-grow: 0; */
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.main-content-ann .card .event-cont .btn{
+    width: auto;
+    height: auto;
+}
+
+.main-content-ann .card .img-cont{
+    height: 100%;
+    
+}
+
+.main-content-ann .card svg{
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+    color: rgb(85, 130, 203);
+}
+
+.main-content-ann .card .text-cont{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1rem 1rem 1rem;;
+    
+}
+/* for the title of annoucnement */
+.main-content-ann.card .text-cont h2{
+    font-size: auto;
+}
+/* for the description */
+.main-content-ann .card .text-cont h5{
+    font-size: auto;
+}
+.main-content-ann .card .text-cont .btn{
+    width: 10rem;
+}
+
+
+
+
+.main-content-ann .card .event-date{
+    height: 100%;
+
+}
+
+@media (max-width: 576px) {
+    
+    .card-cont{
+        padding: 1.5rem;
+    }
+    .card-cont .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        
+    
+    }
+    .card-cont .card .img-cont{
+        width: 100%;
+    }
+
+    .card-cont .card .img-cont svg{
+        width: 100%;
+        padding: 8rem;
+    }
+
+    .card-cont .card .text-cont{
+        width: 100%;
+    }
+
+    .card-cont .card .event-cont{
+        width: 100%;
+        justify-content: start;
+        padding: 1rem;
+        gap: 0.5rem;
+        padding-bottom: 2rem;
+    }
+
+}
