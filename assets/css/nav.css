@@ -1,0 +1,51 @@
+
+.navbar {
+    background-color: #0092de;
+}
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #0092de;
+    text-decoration: none;
+}
+
+.navbar .nav-link.active {
+    background-color: white;
+    color: #0092de;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.custom-toggler {
+    background-color: transparent;
+    border: none;
+}
+
+.custom-toggler-icon {
+    font-size: 1.5rem;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.custom-toggler:hover .custom-toggler-icon {
+    color: #ddd;
+    transform: scale(1.2);
+}
+
+.navbar-nav .nav-link.logout:hover {
+    background-color: #ff4d4d;
+    color: white;
+}

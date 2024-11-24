@@ -1,0 +1,502 @@
+
+
+    #text1{
+        text-align: center;
+        margin: auto;
+
+
+    }
+
+    .index-scoreboard{  
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 45px;
+        width: 45px;
+        border-radius: 8px;
+        
+
+    }
+    .index-cont{
+        display: flex;               
+        justify-content: center;      
+        align-items: center;   
+    }
+
+    .ranking-cont {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .profile-img{
+        object-fit: contain;
+        height: 70px;
+        width: 70px;
+        min-width: 60px;
+        min-height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .profile-pic-itself{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .profile-cont{
+        display: flex;               
+        justify-content: center;      
+        align-items: center;
+    }
+
+    .name-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .peep-names{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 0px 10px 0px 0px;
+        font-family: 'Courier New', Courier, monospaces;
+        color: azure;
+
+    }
+    .link-to-profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 0px 10px 0px 0px;
+        font-family: 'Courier New', Courier, monospaces;
+        color: azure;
+
+    }
+    .link-button{
+
+        color: rgb(113, 11, 223);
+    }
+
+    .gpa-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* .gpa-font{
+
+    } */
+
+    .my-stats-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .child-mystats{
+        flex: 1;
+    }
+
+    .my-rank {
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        justify-content: end ;
+    }
+
+    .my-score {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        font-size: 25px;
+    }
+
+    .top-scorer-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 5px;
+        color: #e0e6ee;
+    }
+
+    .top-scorer-img-cont{
+        overflow: hidden;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    
+    .top-scorer-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+    .leaderboard-top-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-button{
+        color: #e0e6ee;
+        background-color: black;
+        border-color: rgb(56, 56, 56);
+        width: 250px;
+        height: 50px;
+        text-align:  center;
+    }
+
+    .progress-bar {
+    height: 100%;
+    background: linear-gradient(to right, #5e60ce, #6930c3);
+    border-radius: 5px;
+    }
+
+    .progress-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+    }
+
+    /* .top-section{
+
+    } */
+/* --------------------------- for the road to gold text     - -------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    /* for rotating banner */
+    /* .banner {
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .banner .slider{
+        position: absolute;
+        width: 200px;
+        height: 250px;
+        top: 10%;
+        left: calc(50% - 100px);
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        animation: autoRun 20s linear infinite;
+
+    }
+
+    @keyframes autoRun {
+        from{
+            transform: perspective(1000px) rotateY(0deg);
+        }
+        to{
+            transform: perspective(1000px) rotateY(360deg);
+        }
+    }
+ 
+    .banner .slider .item{
+        position: absolute;
+        inset: 0 0 0 0;
+        transform: 
+            rotate(calc( (var(--position) - 1) * (360 / var(--quantity )) * 1deg))
+            translateZ(550px);
+
+    }
+
+    .banner .slider .item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } */
+
+    /* Rotating banner */
+.banner {
+    width: 100%;
+    height: 130vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+}
+
+/* .banner .slider {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 30s linear infinite;
+} */
+
+@media screen and (max-width: 600px) {
+
+    .banner-text{
+    background-color: black;
+      width: 100%;
+      height: 15vh;
+      text-align: center;
+      overflow: visible;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    
+    .banner-text .text{
+        background-image: url('../images/gold-txt-bg.png');
+        width: 100%;
+        height: 50vh;
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        background-size: auto 50%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        z-index: 2;
+    }
+
+    .banner .slider {
+        position: absolute;
+        width: 180px;
+        height: 250px;
+        top: 10%;
+        left: calc(50% - 100px); /* Centered properly for mobile */
+        transform-style: preserve-3d;
+        transform: perspective(500px);
+        animation: autoRun 28s linear infinite;
+        z-index: 1;
+    }
+
+    .banner .slider .item {
+        overflow: hidden;
+        border-radius: 12px;
+        position: absolute;
+        inset: 0;
+        transform: 
+            rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+            translateZ(300px); /* Reduced radius for mobile */
+    }
+
+    @keyframes autoRun {
+        from {
+            transform: perspective(500px) rotateX(-16deg) rotateY(0deg);
+        }
+        to {
+            transform: perspective(500px) rotateX(-16deg) rotateY(360deg);
+        }
+    }
+
+    .banner .content{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: min(1400px, 100vw);
+        height: max-content;
+        padding-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center; 
+        z-index: 0;
+          
+    }
+
+    .banner .content .model{
+        background-image: url('../images/gold-bg.png');
+        width: 100%;
+        height: 95vh;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        z-index: 0;
+
+    }
+   
+}
+
+@media screen and (min-width: 600px) {
+
+
+    .banner-text{
+        background-color: black;
+      width: 100%;
+      height: 15vh;
+      text-align: center;
+      overflow: visible;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    
+    .banner-text .text{
+        background-image: url('../images/gold-txt-bg.png');
+        width: 100%;
+        height: 45vh;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        background-size: auto 90%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        z-index: 2;
+    }
+
+
+
+    .banner .slider {
+        position: absolute;
+        width: 200px;
+        height: 250px;
+        top: 10%;
+        left: calc(50% - 100px);
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        animation: autoRun 35s linear infinite;
+        z-index: 1;
+        transition: transform 0.5s ease;
+    }
+    .banner .slider .item {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        border-radius: 12px;    
+        transform: 
+            rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+            translateZ(550px);
+            transition: transform 0.3s ease;
+    }
+
+    .banner .slider:hover {
+        animation-play-state: paused;
+
+    }
+    .banner .slider .item:hover {
+        transform: 
+            rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+            translateZ(550px) scale(1.2);
+        z-index: 10; /* Bring hovered item to the top */
+    }
+
+    @keyframes autoRun {
+        from {
+            transform: perspective(1000px) rotateX(-14deg) rotateY(0deg);
+        }
+        to {
+            transform: perspective(1000px) rotateX(-14deg) rotateY(360deg);
+        }
+    }
+
+    .banner .content{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: min(1400px, 100vw);
+        height: max-content;
+        padding-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center; 
+          
+    }
+
+    .banner .content .model{
+        background-image: url('../images/gold-bg.png');
+        width: 100%;
+        height: 70vh;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-size: auto 130%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        z-index: 0;
+
+    }
+
+    
+}
+
+/* @keyframes autoRun {
+    from {
+        transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+    }
+    to {
+        transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+    }
+} */
+
+/* .banner .slider .item {
+    position: absolute;
+    inset: 0;
+    transform: 
+        rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+        translateZ(550px);
+} */
+
+.banner .slider .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+       

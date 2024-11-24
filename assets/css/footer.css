@@ -1,0 +1,60 @@
+.logo{
+            
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;    
+    transition: color 0.3s ease;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 100%;
+    
+}
+
+.footer {
+
+    width: 100%;
+    text-align: left;
+
+
+    background-color: #1074c4;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    padding: 15px 20px;
+    border-top: 5px solid #96cbea;
+    text-wrap: nowrap;
+    }
+.footer a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+.footer a:hover {
+    color: black;
+}
+
+.footer .social-icons a {
+font-size: 18px;
+margin: 0 10px;
+display: inline-block;
+transition: color 0.3s ease;
+
+}
+
+
+.footer .social-icons svg {
+transition: color 0.3s ease;
+
+}
+.footer .social-icons svg:hover {
+color: black;
+}
+
+
+
+.footer h6 {
+font-weight: bold;
+color: white;
+text-align: left;
+}
