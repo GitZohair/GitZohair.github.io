@@ -161,11 +161,12 @@
                 </tbody>
             </table>
             <div class="dropdown mt-4">
-                <button class="btn btn-primary dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Select Action</button>
+                <button class="btn btn-primary dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Select Action
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <li><a class="dropdown-item" href="#" id="downloadAdmitCard">Download Admit Card</a></li>
                     <li><a class="dropdown-item" href="#">View Schedule</a></li>
                 </ul>
+            </button>
             </div>
             <button id="printButton" class="btn btn-secondary mt-3 w-100 btn-hover">Print Admit Card</button>
         </div>
@@ -238,19 +239,16 @@
 
     
     <script>
-        // Hide loader after 3 seconds
         setTimeout(() => {
             document.getElementById('loader').style.display = 'none';
             document.body.style.overflow = 'auto';
         }, 3000);
 
-        // Download admit card as PDF
         document.getElementById('downloadAdmitCard').addEventListener('click', () => {
             const element = document.querySelector('.admit-card');
             html2pdf().from(element).save('AdmitCard.pdf');
         });
 
-        // Print admit card
         document.getElementById('printButton').addEventListener('click', () => {
             window.print();
         });
